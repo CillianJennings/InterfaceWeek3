@@ -83,6 +83,32 @@ public class ProductDB {
             myMusic.setLabel("Polar Music");
             p = myMusic;
         }
+
+        if (productCode.equalsIgnoreCase("S95B")) {
+            TV myTV = new TV();
+            myTV.setCode(productCode);
+            myTV.setDescription("4K OLED HDR");
+            myTV.setPrice(1699.00);
+            myTV.setScreen("55");
+            myTV.setManufacture("Samsung");
+            p = myTV;
+        } else if (productCode.equalsIgnoreCase("C2")) {
+            TV myTV = new TV();
+            myTV.setCode(productCode);
+            myTV.setDescription("4k OLED HDR");
+            myTV.setPrice(4499.99);
+            myTV.setScreen("83");
+            myTV.setManufacture("LG");
+            p = myTV;
+        } else if (productCode.equalsIgnoreCase("A95K")) {
+            TV myTV = new TV();
+            myTV.setCode(productCode);
+            myTV.setDescription("OLED 4k Ultra HD HDR");
+            myTV.setPrice(3950.00);
+            myTV.setScreen("65");
+            myTV.setManufacture("Sony");
+            p = myTV;
+        }
         return p;
     }
 }
